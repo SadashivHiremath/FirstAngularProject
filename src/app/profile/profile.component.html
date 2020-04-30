@@ -1,0 +1,10 @@
+<input type="text" placeholder="Enter Id" [(ngModel)]="userName">
+<button (click)="searchForUser()">Search Restaurant</button>
+
+<div *ngIf="responseBack">
+    <h3>User Name: {{responseBack.restaurantId}}</h3>
+    <p>Company {{responseBack.restaurantName}}</p>
+    <p>Followers {{responseBack.locality}}</p>
+    <!--p>Location {{responseBack.location}}</p-->
+  </div>
+  
